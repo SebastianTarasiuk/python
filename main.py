@@ -13,9 +13,12 @@ class Miasto(Miejscowosc):
 
 class Wies(Miejscowosc):
     def __init__(self, nazwa, liczba, powierzchnia, soltys, gmina):
-        super().__init__(self, nazwa, liczba, powierzchnia)
+        super().__init__(nazwa, liczba, powierzchnia)
         self.soltys = soltys
-        self.gmina = gimna
+        self.gmina = gmina
 
+miasto = Miasto("Warszawa", 1800000, 517, "Rafał Trzaskowski", "mazowieckie")
+wies = Wies("Zawoja" , 7500, 454, "Adam", "suski")
 
-
+print(miasto)
+print(wies)
