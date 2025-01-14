@@ -11,4 +11,11 @@ class Miasto(Miejscowosc):
         self.powiat = powiat
 
 
+class Wies(Miejscowosc):
+    def __init__(self, nazwa, liczba, powierzchnia, soltys, gmina):
+        super().__init__(self, nazwa, liczba, powierzchnia)
+        self.soltys = soltys
+        self.gmina = gimna
+
+
 
